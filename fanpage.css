@@ -1,0 +1,309 @@
+* {
+    margin: 0px;
+    border: 0px;
+    text-decoration: none;
+    font-family: monospace, sans-serif
+    }
+    
+nav {
+    background-image: url(img1/andymurrayban.jpg);
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    }
+    
+nav * {
+    padding: 5px 20px;      
+    }
+
+nav li a {
+    color: white;
+    }
+    
+nav li a:visited {
+    color: white;
+    }
+
+nav li a:hover {
+    color: green;
+    }
+    
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: black;
+    }
+
+#image {
+    width: 100%;
+    height: 525px;
+    object-fit: auto;
+}
+
+#img-caption {
+    background-color: black;
+    padding: 10px;
+    width: auto;
+    color: white;
+}
+
+#tribute-info {
+    padding: 20px;
+    margin: 10px 150px;
+    line-height: 1.5;
+}
+
+#tribute-info h2, article h2 {
+    padding-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center; 
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-size: 12px;
+}
+
+footer a:visited {
+    color: green;
+}
+
+main {
+    padding: 20px;
+    margin: 10px 40px;
+    line-height: 1.5;
+    display: flex;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 40px;
+}
+
+#column {
+    width: 30%;
+    margin-right: 40px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-top: 5px solid yellow;
+    margin: 0 0 60px 20px;
+}
+
+.interview {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-top: 5px solid yellow;
+    margin: 0 0 60px 20px;
+}
+
+#stats {
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+    margin: 0 0 60px 20px;
+    background-color: whitesmoke;
+    overflow-x: auto;
+}
+h3 {
+    border-top: 5px solid yellow;
+    min-width: 30%;
+    background-color: whitesmoke;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+table *, h3, h4 {
+    padding: 5px 10px;
+}
+
+
+.fontlarge {
+    font-size: 25px;
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+}
+
+.padding {padding-bottom: 10px;}
+
+.comebackimg {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0px 0 25px 0;
+    min-height: 300px;
+    
+}
+
+.comeback {
+    padding: 20px;
+    margin: 10px 50px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+.latest {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 40%;
+    font-size: 12.5px;
+    font-weight: bold;
+}
+.latestnews {
+    margin-bottom: 50px;
+}
+.latestnews p {
+    padding: 10px;
+}
+
+.latestvideo p {
+    padding: 10px;
+}
+.cb1 {
+    display: flex;
+}
+.cb1 a:hover{
+    text-decoration: underline;
+}
+.comebackimg1 {
+    width: 120px;
+    height: 75px;
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+}
+.cb1:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1500px) {
+    main {
+    margin-left: 0;
+    margin-right: 0;
+} 
+section {
+    padding: 5px;
+    width: 67%;
+
+}
+#column {
+    width: 33%;
+
+}
+.sidebar, .interview, #stats {
+    margin-bottom: 60px;
+}
+}
+
+@media (max-width: 900px) {
+    section {
+        width: 60%;
+    }
+    
+    #column {
+        width: 40%;
+        
+    }
+    .sidebar, .interview, #stats {
+        margin-bottom: 80px;
+    }
+    #image {
+        width: 100%;
+        height: 450px;
+        object-fit: auto;
+    }
+    .comebackimg {
+        min-height: 250px;
+    }
+
+    #tribute-info, .comeback {
+        padding: 20px;
+        margin: 10px 50px;
+        line-height: 1.5;
+    }
+
+    .comeback {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    .latest {
+        padding: 0;
+        font-size: 15px;
+    }
+    .comebackimg {
+        min-height: 200px;
+    }
+    }
+
+
+@media (max-width: 750px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        
+    } 
+    main * {
+        min-width: 92%;
+    }
+    section {
+        margin-bottom: -10px;
+        margin-left: -10px;
+        
+        width: 100%;
+        
+    }
+    
+    #column {
+        margin: 30px 0 20px -20px;
+        width: 100%;
+    }
+    #tribute-info {
+        padding: 10px;
+        margin: 20px;
+    }
+    #tribute-info li {
+        margin-left: -20px;
+    }
+    #image {
+        width: 100%;
+        height: 350px;
+        object-fit: auto;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
